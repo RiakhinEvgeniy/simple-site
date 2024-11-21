@@ -5,8 +5,10 @@
 
 $darkBlueColor: #28293E;
 $orangeColor: #EF6D58;
+$lightColor: #FDF0E9;
+$darkBraun: #391400;
 
-.wraper {
+.wrapper {
     width: 1160px;
     margin: 0 auto;
     font-family: "Epilogue", sans-serif;
@@ -17,7 +19,7 @@ $orangeColor: #EF6D58;
 .orange-text {
     color: $orangeColor;
     line-height: 32px;
-    width: 450px;
+    letter-spacing: 3px;
 }
 
 .h1 {
@@ -105,5 +107,55 @@ $orangeColor: #EF6D58;
         flex-direction: column;
         align-items: flex-start;
         gap: 35px;
+    }
+}
+
+.service {
+    background-color: $lightColor;
+    padding: 90px 0;
+
+    &_question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .question {
+        color: $darkBraun;
+        font-size: 56px;
+        font-weight: bolder;
+        width: 425px;
+        line-height: 64px;
+        text-align: center;
+    }
+}
+
+.card-general {
+    background-color: $lightColor;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #F3D1BF;
+        padding: 40px;
+        gap: 15px;
+        width: 50%;
+
+        &_logo-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: $darkBraun;
+        }
+
+        &_circle {
+            background-color: $orangeColor;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
     }
 }
