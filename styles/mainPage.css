@@ -1,6 +1,54 @@
-p {
-  font-size: 75px;
-  color: black;
-  background-color: green;
-  font-weight: bolder;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wraper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: inherit;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 3px 3px black;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: #28293E;
+}
+
+.header {
+  background-color: #28293E;
+  color: white;
+  padding: 10px 0;
+}
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header_list {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  list-style-type: none;
+}
+.header_list-item {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header_list-item:hover {
+  transform: translateY(-2px);
 }/*# sourceMappingURL=mainPage.css.map */

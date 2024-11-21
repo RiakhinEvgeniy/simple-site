@@ -1,6 +1,59 @@
-p {
-    font-size: 75px;
-    color: black;
-    background-color: green;
-    font-weight: bolder;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$darkBlueColor: #28293E;
+
+.wraper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: inherit;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 3px 3px black;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: $darkBlueColor;
+    }
+}
+
+.header {
+    background-color: $darkBlueColor;
+    color: white;
+    padding: 10px 0;
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        list-style-type: none;
+    }
+    &_list-item {
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
 }
