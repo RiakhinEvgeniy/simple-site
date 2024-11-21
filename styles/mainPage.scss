@@ -4,26 +4,55 @@
 }
 
 $darkBlueColor: #28293E;
+$orangeColor: #EF6D58;
 
 .wraper {
     width: 1160px;
     margin: 0 auto;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.orange-text {
+    color: $orangeColor;
+    line-height: 32px;
+    width: 450px;
+}
+
+.h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 72px;
 }
 
 .button {
     background-color: inherit;
+    width: 138px;
+    height: 48px;
     color: white;
-    padding: 10px 30px;
+    padding: 10px 25px;
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     box-shadow: 0 3px 3px black;
     cursor: pointer;
+
     &:hover {
         background-color: white;
         color: $darkBlueColor;
     }
+}
+
+.orangeButton {
+    @extend .button;
+    background-color: $orangeColor;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 154px;
+    height: 48px;
 }
 
 .header {
@@ -49,11 +78,31 @@ $darkBlueColor: #28293E;
         gap: 100px;
         list-style-type: none;
     }
+
     &_list-item {
         cursor: pointer;
         transition: 0.5s;
+
         &:hover {
             transform: translateY(-2px);
         }
+    }
+}
+
+.about {
+    background-color: $darkBlueColor;
+
+    &_box {
+        display: flex;
+        background-color: $darkBlueColor;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_inform {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
     }
 }
