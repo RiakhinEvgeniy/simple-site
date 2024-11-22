@@ -17,6 +17,12 @@
   letter-spacing: 3px;
 }
 
+.card_text, .service_footer-link {
+  color: rgba(133, 90, 68, 0.9);
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
 .h1 {
   color: white;
   font-weight: 800;
@@ -114,9 +120,23 @@
   line-height: 64px;
   text-align: center;
 }
+.service_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px;
+}
+.service_footer-link {
+  text-decoration: none;
+}
+.service_footer-link:hover {
+  color: #EF6D58;
+  text-decoration: underline;
+}
 
 .card-general {
   background-color: #FDF0E9;
+  display: flex;
 }
 .card-general .card {
   display: flex;
@@ -125,8 +145,9 @@
   padding: 40px;
   gap: 15px;
   width: 50%;
+  box-sizing: border-box;
 }
-.card-general .card_logo-title {
+.card-general .card_box {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -139,4 +160,31 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+.card-general .card_text-design {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-general .card_btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EF6D58;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+.card-general .card_btn:hover {
+  background-color: #EF6D58;
+  color: white;
+}
+.card-general .card_text-learn {
+  color: #391400;
+}
+.card-general .card:last-child {
+  border-left: none;
 }/*# sourceMappingURL=mainPage.css.map */

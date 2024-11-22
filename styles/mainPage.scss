@@ -6,7 +6,8 @@
 $darkBlueColor: #28293E;
 $orangeColor: #EF6D58;
 $lightColor: #FDF0E9;
-$darkBraun: #391400;
+$darkBraunColor: #391400;
+$cardTextColor: rgba(133, 90, 68, 0.9);
 
 .wrapper {
     width: 1160px;
@@ -20,6 +21,12 @@ $darkBraun: #391400;
     color: $orangeColor;
     line-height: 32px;
     letter-spacing: 3px;
+}
+
+.card_text {
+    color: $cardTextColor;
+    line-height: 28px;
+    letter-spacing: 2px;
 }
 
 .h1 {
@@ -122,17 +129,35 @@ $darkBraun: #391400;
     }
 
     .question {
-        color: $darkBraun;
+        color: $darkBraunColor;
         font-size: 56px;
         font-weight: bolder;
         width: 425px;
         line-height: 64px;
         text-align: center;
     }
+
+    &_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 65px;
+    }
+
+    &_footer-link {
+        text-decoration: none;
+        @extend .card_text;
+
+        &:hover {
+            color: #EF6D58;
+            text-decoration: underline;
+        }
+    }
 }
 
 .card-general {
     background-color: $lightColor;
+    display: flex;
 
     .card {
         display: flex;
@@ -141,12 +166,13 @@ $darkBraun: #391400;
         padding: 40px;
         gap: 15px;
         width: 50%;
+        box-sizing: border-box;
 
-        &_logo-title {
+        &_box {
             display: flex;
             align-items: center;
             gap: 20px;
-            color: $darkBraun;
+            color: $darkBraunColor;
         }
 
         &_circle {
@@ -156,6 +182,39 @@ $darkBraun: #391400;
             align-items: center;
             justify-content: center;
             padding: 20px;
+        }
+
+        &_text-design {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        &_btn {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $orangeColor;
+            background-color: white;
+            border-radius: 50%;
+            font-size: 28px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $orangeColor;
+                color: white;
+            }
+        }
+
+        &_text-learn {
+            color: $darkBraunColor;
+
+        }
+
+        &:last-child {
+            border-left: none;
         }
     }
 }
