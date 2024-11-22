@@ -130,7 +130,7 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
 
     .question {
         color: $darkBraunColor;
-        font-size: 56px;
+        font-size: 50px;
         font-weight: bolder;
         width: 425px;
         line-height: 64px;
@@ -217,4 +217,75 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
             border-left: none;
         }
     }
+}
+
+.portfolio {
+    background-color: $darkBlueColor;
+    display: flex;
+    padding: 90px 0;
+    flex-direction: column;
+    // border: 1px solid red;
+
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_header {
+        // border: 1px solid wheat;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+    }
+
+    &_text {
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+    }
+
+    &_title {
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+
+    &_box-img {
+        // border: 1px solid white;
+        padding: 90px 0;
+        display: flex;
+    }
+
+    &_img {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        padding: 10px 0;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 33.333%;
+
+        &:first-child {
+            border-right: none;
+            border-left: none;
+        }
+
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    .img {
+        width: 97%;
+    }
+}
+
+.service_btn {
+    width: 165px;
+    height: 48px;
+    font-size: 14px;
+    margin-bottom: 7px;
 }

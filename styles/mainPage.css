@@ -114,7 +114,7 @@
 }
 .service .question {
   color: #391400;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: bolder;
   width: 425px;
   line-height: 64px;
@@ -187,4 +187,60 @@
 }
 .card-general .card:last-child {
   border-left: none;
+}
+
+.portfolio {
+  background-color: #28293E;
+  display: flex;
+  padding: 90px 0;
+  flex-direction: column;
+}
+.portfolio_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.portfolio_text {
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+}
+.portfolio_title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+.portfolio_box-img {
+  padding: 90px 0;
+  display: flex;
+}
+.portfolio_img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 33.333%;
+}
+.portfolio_img:first-child {
+  border-right: none;
+  border-left: none;
+}
+.portfolio_img:last-child {
+  border-left: none;
+}
+.portfolio .img {
+  width: 97%;
+}
+
+.service_btn {
+  width: 165px;
+  height: 48px;
+  font-size: 14px;
+  margin-bottom: 7px;
 }/*# sourceMappingURL=mainPage.css.map */
