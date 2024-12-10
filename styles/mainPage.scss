@@ -8,6 +8,7 @@ $orangeColor: #EF6D58;
 $lightColor: #FDF0E9;
 $darkBraunColor: #391400;
 $cardTextColor: rgba(133, 90, 68, 0.9);
+$colorBordersCard: #F3D1BF;
 
 .wrapper {
     width: 1160px;
@@ -25,8 +26,10 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
     color: $orangeColor;
     line-height: 32px;
     letter-spacing: 3px;
+
     @media (max-width: 500px) {
         width: 90%;
+        text-align: center;
     }
 }
 
@@ -177,7 +180,10 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 65px;
+        margin-top: 25px;
+        padding: 35px;
+        box-sizing: border-box;
+        width: 90%;
     }
 
     &_footer-link {
@@ -197,22 +203,35 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
 
     @media (max-width: 500px) {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
         display: flex;
         flex-direction: column;
-        border: 1px solid #F3D1BF;
+        border: 1px solid $colorBordersCard;
         padding: 40px;
         gap: 15px;
         width: 50%;
         box-sizing: border-box;
+
+        @media (max-width: 500px) {
+            width: 90%;
+            border: 1px solid $colorBordersCard;
+            margin: 0px;
+        }
 
         &_box {
             display: flex;
             align-items: center;
             gap: 20px;
             color: $darkBraunColor;
+
+            @media (max-width: 500px) {
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 10px;
+            }
         }
 
         &_circle {
@@ -255,6 +274,11 @@ $cardTextColor: rgba(133, 90, 68, 0.9);
 
         &:last-child {
             border-left: none;
+            @media (max-width: 500px) {
+                border-left: 1px solid $colorBordersCard;
+                border-top: none;
+            }
+
         }
     }
 }
