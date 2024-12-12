@@ -142,6 +142,15 @@
   }
 }
 
+.question {
+  color: #391400;
+  font-size: 50px;
+  font-weight: bolder;
+  width: 425px;
+  line-height: 64px;
+  text-align: center;
+}
+
 .service {
   background-color: #FDF0E9;
   padding: 90px 0;
@@ -151,14 +160,6 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-.service .question {
-  color: #391400;
-  font-size: 50px;
-  font-weight: bolder;
-  width: 425px;
-  line-height: 64px;
-  text-align: center;
 }
 .service_footer {
   display: flex;
@@ -420,4 +421,59 @@
   .img-text {
     margin-left: 10px;
   }
+}
+
+.aboutme {
+  background-color: #FDF0E9;
+  display: flex;
+  padding: 90px 0;
+  flex-direction: column;
+  position: relative;
+}
+.aboutme_wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted red;
+}
+.aboutme_container-foto-rightbox {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutme_foto-box {
+  border: 1px solid yellow;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.aboutme_foto {
+  border: 1px solid green;
+}
+.aboutme_rightbox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.aboutme_name {
+  text-align: start;
+}
+.aboutme_text {
+  color: rgba(133, 90, 68, 0.9);
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.aboutme_btn {
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #391400;
+  font-weight: bold;
+}
+.aboutme_btn:hover {
+  background-color: #391400;
+  color: white;
 }/*# sourceMappingURL=mainPage.css.map */

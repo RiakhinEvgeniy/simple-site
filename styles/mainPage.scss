@@ -156,6 +156,15 @@ $colorBordersCard: #F3D1BF;
     }
 }
 
+.question {
+    color: $darkBraunColor;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 425px;
+    line-height: 64px;
+    text-align: center;
+}
+
 .service {
     background-color: $lightColor;
     padding: 90px 0;
@@ -167,14 +176,7 @@ $colorBordersCard: #F3D1BF;
         gap: 15px;
     }
 
-    .question {
-        color: $darkBraunColor;
-        font-size: 50px;
-        font-weight: bolder;
-        width: 425px;
-        line-height: 64px;
-        text-align: center;
-    }
+
 
     &_footer {
         display: flex;
@@ -354,6 +356,7 @@ $colorBordersCard: #F3D1BF;
         &:first-child {
             border-right: none;
             border-left: none;
+
             @media (max-width: 500px) {
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 border-bottom: none;
@@ -362,6 +365,7 @@ $colorBordersCard: #F3D1BF;
 
         &:last-child {
             border-left: none;
+
             @media (max-width: 500px) {
                 border: 1px solid rgba(255, 255, 255, 0.3);
             }
@@ -385,7 +389,7 @@ $colorBordersCard: #F3D1BF;
     @media (max-width: 500px) {
         left: 13%;
         top: 780px;
-    }    
+    }
 }
 
 .img_btn-text-center {
@@ -400,7 +404,7 @@ $colorBordersCard: #F3D1BF;
     @media (max-width: 500px) {
         left: 13%;
         bottom: 835px;
-    } 
+    }
 }
 
 .img_btn-text-right {
@@ -415,7 +419,7 @@ $colorBordersCard: #F3D1BF;
     @media (max-width: 500px) {
         left: 13%;
         bottom: 270px;
-    } 
+    }
 }
 
 .img_btn {
@@ -445,5 +449,73 @@ $colorBordersCard: #F3D1BF;
 
     @media (max-width: 500px) {
         margin-left: 10px;
-    } 
+    }
+}
+
+.aboutme {
+    background-color: $lightColor;
+    display: flex;
+    padding: 90px 0;
+    flex-direction: column;
+    position: relative;
+    // height: 300px;
+
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        border: 1px dotted red;
+
+    }
+
+    &_container-foto-rightbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_foto-box {
+        border: 1px solid yellow;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+
+    &_foto {
+        border: 1px solid green;
+        // gap: 15px;
+        
+    }
+
+    &_rightbox {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    &_name {
+        text-align: start;
+    }
+
+    &_text {
+        color: $cardTextColor;
+        line-height: 28px;
+        letter-spacing: 2px;
+    }
+
+    &_btn {
+        width: 130px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        background-color: white;
+        color: $darkBraunColor;
+        font-weight: bold;
+
+        &:hover {
+            background-color: $darkBraunColor;
+            color: white;
+        }
+    }
 }
