@@ -23,8 +23,10 @@
 }
 @media (max-width: 500px) {
   .orange-text {
+    display: flex;
     width: 90%;
     text-align: center;
+    justify-content: flex-start;
   }
 }
 
@@ -284,6 +286,7 @@
   .portfolio_header {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 25px;
   }
 }
 .portfolio_btn {
@@ -303,6 +306,11 @@
   flex-direction: column;
   align-items: start;
   gap: 40px;
+}
+@media (max-width: 500px) {
+  .portfolio_title {
+    justify-content: flex-start;
+  }
 }
 .portfolio_box-img {
   padding: 90px 0;
@@ -379,7 +387,7 @@
 @media (max-width: 500px) {
   .img_btn-text-center {
     left: 13%;
-    bottom: 835px;
+    bottom: 750px;
   }
 }
 
@@ -395,7 +403,7 @@
 @media (max-width: 500px) {
   .img_btn-text-right {
     left: 13%;
-    bottom: 270px;
+    bottom: 195px;
   }
 }
 
@@ -445,9 +453,25 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .aboutme_container-foto-rightbox {
+    flex-direction: column;
+  }
+}
 .aboutme_foto-box {
   box-sizing: border-box;
   padding: 0px;
+}
+@media (max-width: 500px) {
+  .aboutme_foto-box {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutme_foto {
+    width: 100%;
+    margin-left: 20px;
+  }
 }
 .aboutme_rightbox {
   display: flex;
@@ -456,6 +480,16 @@
   padding: 50px;
   box-sizing: border-box;
   margin-left: 50px;
+}
+@media (max-width: 500px) {
+  .aboutme_rightbox {
+    width: 100%;
+    margin-left: 25px;
+    padding-left: 0px;
+  }
+}
+.aboutme_title {
+  display: flex;
 }
 .aboutme_name {
   text-align: start;
@@ -487,6 +521,11 @@
   margin-top: 110px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .aboutme_container-for-cards {
+    flex-direction: column;
+  }
+}
 .aboutme_box-img-text {
   display: flex;
   width: 50%;
@@ -496,6 +535,19 @@
   display: flex;
   justify-content: start;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .aboutme_box-img-text {
+    width: 90%;
+    height: 210px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .aboutme_img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .aboutme_circle {
   background-color: #EF6D58;

@@ -28,8 +28,10 @@ $colorBordersCard: #F3D1BF;
     letter-spacing: 3px;
 
     @media (max-width: 500px) {
+        display: flex;
         width: 90%;
         text-align: center;
+        justify-content: flex-start;
     }
 }
 
@@ -309,6 +311,7 @@ $colorBordersCard: #F3D1BF;
         @media (max-width: 500px) {
             flex-direction: column;
             align-items: flex-start;
+            margin-left: 25px;
         }
     }
 
@@ -331,6 +334,10 @@ $colorBordersCard: #F3D1BF;
         flex-direction: column;
         align-items: start;
         gap: 40px;
+
+        @media (max-width: 500px) {
+            justify-content: flex-start;
+        }
     }
 
     &_box-img {
@@ -341,7 +348,6 @@ $colorBordersCard: #F3D1BF;
         @media (max-width: 500px) {
             flex-direction: column;
             align-items: center;
-            // align-items: flex-start;
         }
     }
 
@@ -408,7 +414,7 @@ $colorBordersCard: #F3D1BF;
 
     @media (max-width: 500px) {
         left: 13%;
-        bottom: 835px;
+        bottom: 750px;
     }
 }
 
@@ -423,7 +429,7 @@ $colorBordersCard: #F3D1BF;
 
     @media (max-width: 500px) {
         left: 13%;
-        bottom: 270px;
+        bottom: 195px;
     }
 }
 
@@ -462,13 +468,10 @@ $colorBordersCard: #F3D1BF;
     display: flex;
     padding: 90px 0;
     flex-direction: column;
-    // position: relative;
-    // height: 300px;
 
     &_wrapper {
         display: flex;
         flex-direction: column;
-        // border: 1px dotted red;
         margin-top: 90px;
         margin-bottom: 50px;
     }
@@ -476,23 +479,46 @@ $colorBordersCard: #F3D1BF;
     &_container-foto-rightbox {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
     }
 
     &_foto-box {
-        // border: 1px solid yellow;
         box-sizing: border-box;
         padding: 0px;
+
+        @media (max-width: 500px) {
+            width: 90%;
+        }
+    }
+
+    &_foto {
+        @media (max-width: 500px) {
+            width: 100%;
+            margin-left: 20px;
+        }
     }
 
 
     &_rightbox {
         display: flex;
         flex-direction: column;
-        // border: 1px solid blue;
         gap: 30px;
         padding: 50px;
         box-sizing: border-box;
         margin-left: 50px;
+
+        @media (max-width: 500px) {
+            width: 100%;
+            margin-left: 25px;
+            padding-left: 0px;
+        }
+    }
+
+    &_title {
+        display: flex;
     }
 
     &_name {
@@ -526,9 +552,13 @@ $colorBordersCard: #F3D1BF;
         display: flex;
         align-items: center;
         justify-content: center;
-        // border: 2px solid red;
         margin-top: 110px;
         width: 100%;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+
+        }
     }
 
     &_box-img-text {
@@ -540,6 +570,19 @@ $colorBordersCard: #F3D1BF;
         display: flex;
         justify-content: start;
         align-items: center;
+
+        @media (max-width: 500px) {
+            width: 90%;
+            height: 210px;
+            padding-left: 50px;
+        }
+    }
+
+    &_img {
+        @media (max-width: 500px) {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     &_circle {
