@@ -359,8 +359,7 @@ $colorBordersCard: #F3D1BF;
         width: 33.333%;
 
         @media (max-width: 500px) {
-            width: 90%;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 100%;
             border-bottom: none;
         }
 
@@ -383,7 +382,7 @@ $colorBordersCard: #F3D1BF;
         }
     }
 
-    .img {
+    .img-in-portfolio {
         width: 97%;
     }
 }
@@ -472,8 +471,12 @@ $colorBordersCard: #F3D1BF;
     &_wrapper {
         display: flex;
         flex-direction: column;
-        margin-top: 90px;
+        margin-top: 75px;
         margin-bottom: 50px;
+
+        @media (max-width: 500px) {
+            margin-top: 40px;
+        }
     }
 
     &_container-foto-rightbox {
@@ -604,5 +607,51 @@ $colorBordersCard: #F3D1BF;
         color: $darkBraunColor;
         font-weight: bolder;
         font-size: 35px;
+    }
+}
+
+.features {
+    background-color: $darkBlueColor;
+    display: flex;
+    padding: 90px 0px;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid lightcyan;
+    }
+
+    &_box-for-text-check {
+        width: 45%;
+        border: 2px solid green;
+    }
+
+    &_box-text {
+        border: 1px solid red;
+    }
+
+    &_title {
+        color: white;
+        font-size: 45px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+        padding-top: 25px;
+        padding-right: 95px;
+    }
+
+    &_text {
+        color: white;
+        font-size: 20px;
+        line-height: 32px;
+        padding-top: 25px;
+    }
+
+    &_box-for-img {
+        width: 45%;
+        border: 2px solid green;   
+    }
+
+    &_img {
+        width: 100%;
     }
 }
