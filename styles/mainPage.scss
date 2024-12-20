@@ -572,7 +572,6 @@ $colorBordersCard: #F3D1BF;
         border: 1px solid $colorBordersCard;
         box-sizing: border-box;
         padding: 20px;
-        display: flex;
         justify-content: start;
         align-items: center;
 
@@ -622,11 +621,20 @@ $colorBordersCard: #F3D1BF;
         justify-content: space-between;
         // border: 1px solid lightcyan;
         margin-top: 90px;
+
+        @media (max-width: 500px) {
+            align-items: center;
+            flex-direction: column-reverse;
+            margin-top: 40px;
+        }
     }
 
     &_box-for-text-check {
         width: 45%;
         // border: 2px solid green;
+        @media (max-width: 500px) {
+            width: 90%;
+        } 
     }
 
     &_title {
@@ -655,7 +663,11 @@ $colorBordersCard: #F3D1BF;
 
     &_box-for-img {
         width: 45%;
-        // border: 2px solid green;   
+        // border: 2px solid green;
+
+        @media (max-width: 500px) {
+            width: 90%;
+        }
     }
 
     &_img {
