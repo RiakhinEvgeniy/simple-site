@@ -651,4 +651,20 @@
   color: lightgray;
   line-height: 32px;
   margin-left: 20px;
+}
+
+.getstarted {
+  background-color: #F9E5DA;
+  display: flex;
+  padding-top: 90px 0px;
+}
+.getstarted_wrapper {
+  display: flex;
+  margin-top: 90px;
+  border: 1px solid green;
+}
+.getstarted_box-for-text-button {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
 }/*# sourceMappingURL=mainPage.css.map */
