@@ -10,7 +10,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-@media (max-width: 1160px) {
+@media (max-width: 500px) {
   .wrapper {
     width: 90%;
   }
@@ -25,7 +25,7 @@
   .orange-text {
     display: flex;
     width: 90%;
-    text-align: center;
+    text-align: start;
     justify-content: flex-start;
   }
 }
@@ -68,7 +68,6 @@
   background-color: #EF6D58;
   border: none;
   box-shadow: none;
-  border-radius: 0;
   width: 154px;
   height: 48px;
 }
@@ -125,21 +124,19 @@
 }
 .about_box {
   display: flex;
-  background-color: #28293E;
   justify-content: space-between;
   align-items: center;
+  background-color: #28293E;
   padding: 90px 0;
 }
 @media (max-width: 500px) {
   .about_box {
     flex-direction: column-reverse;
-    padding: 10px;
   }
 }
 .about_inform {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 35px;
 }
 @media (max-width: 500px) {
@@ -224,13 +221,13 @@
   }
 }
 .card-general .card_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #EF6D58;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   width: 40px;
   height: 40px;
-  justify-content: center;
   padding: 20px;
 }
 .card-general .card_text-design {
@@ -238,11 +235,11 @@
   font-size: 24px;
 }
 .card-general .card_btn {
-  width: 50px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
   color: #EF6D58;
   background-color: white;
   border-radius: 50%;
@@ -269,10 +266,8 @@
 
 .portfolio {
   background-color: #28293E;
-  display: flex;
   padding: 90px 0;
   padding-bottom: 30px;
-  flex-direction: column;
   position: relative;
 }
 .portfolio_wrapper {
@@ -361,44 +356,44 @@
 }
 
 .img_btn-text-left {
-  position: absolute;
-  bottom: 200px;
-  left: 5%;
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: absolute;
+  bottom: 200px;
+  left: 5%;
   gap: 30px;
 }
 @media (max-width: 500px) {
   .img_btn-text-left {
     left: 13%;
-    top: 780px;
+    top: 820px;
   }
 }
 
 .img_btn-text-center {
-  position: absolute;
-  bottom: 200px;
-  left: 38%;
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: absolute;
+  bottom: 200px;
+  left: 38%;
   gap: 30px;
 }
 @media (max-width: 500px) {
   .img_btn-text-center {
     left: 13%;
-    bottom: 750px;
+    bottom: 820px;
   }
 }
 
 .img_btn-text-right {
-  position: absolute;
-  bottom: 200px;
-  left: 71%;
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: absolute;
+  bottom: 200px;
+  left: 71%;
   gap: 30px;
 }
 @media (max-width: 500px) {
@@ -440,9 +435,7 @@
 
 .aboutme {
   background-color: #FDF0E9;
-  display: flex;
   padding: 90px 0;
-  flex-direction: column;
 }
 .aboutme_wrapper {
   display: flex;
@@ -534,12 +527,12 @@
 }
 .aboutme_box-img-text {
   display: flex;
+  justify-content: start;
+  align-items: center;
   width: 50%;
   border: 1px solid #F3D1BF;
   box-sizing: border-box;
   padding: 20px;
-  justify-content: start;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .aboutme_box-img-text {

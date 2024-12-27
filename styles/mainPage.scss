@@ -18,7 +18,7 @@ $colorGetStarted: #F9E5DA;
     font-optical-sizing: auto;
     font-style: normal;
 
-    @media (max-width: 1160px) {
+    @media (max-width: 500px) {
         width: 90%;
     }
 }
@@ -31,7 +31,7 @@ $colorGetStarted: #F9E5DA;
     @media (max-width: 500px) {
         display: flex;
         width: 90%;
-        text-align: center;
+        text-align: start;
         justify-content: flex-start;
     }
 }
@@ -76,7 +76,6 @@ $colorGetStarted: #F9E5DA;
     background-color: $orangeColor;
     border: none;
     box-shadow: none;
-    border-radius: 0;
     width: 154px;
     height: 48px;
 }
@@ -138,21 +137,21 @@ $colorGetStarted: #F9E5DA;
 
     &_box {
         display: flex;
-        background-color: $darkBlueColor;
         justify-content: space-between;
         align-items: center;
+        background-color: $darkBlueColor;
         padding: 90px 0;
 
         @media (max-width: 500px) {
             flex-direction: column-reverse;
-            padding: 10px;
+            //padding: 50px;
         }
     }
 
     &_inform {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        //align-items: flex-start;
         gap: 35px;
     }
 
@@ -182,8 +181,6 @@ $colorGetStarted: #F9E5DA;
         align-items: center;
         gap: 15px;
     }
-
-
 
     &_footer {
         display: flex;
@@ -244,13 +241,13 @@ $colorGetStarted: #F9E5DA;
         }
 
         &_circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $orangeColor;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
             width: 40px;
             height: 40px;
-            justify-content: center;
             padding: 20px;
         }
 
@@ -260,11 +257,11 @@ $colorGetStarted: #F9E5DA;
         }
 
         &_btn {
-            width: 50px;
-            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 50px;
+            height: 50px;
             color: $orangeColor;
             background-color: white;
             border-radius: 50%;
@@ -295,10 +292,10 @@ $colorGetStarted: #F9E5DA;
 
 .portfolio {
     background-color: $darkBlueColor;
-    display: flex;
+    //display: flex;
     padding: 90px 0;
     padding-bottom: 30px;
-    flex-direction: column;
+    //flex-direction: column;
     position: relative;
 
     &_wrapper {
@@ -391,42 +388,42 @@ $colorGetStarted: #F9E5DA;
 }
 
 .img_btn-text-left {
-    position: absolute;
-    bottom: 200px;
-    left: 5%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    position: absolute;
+    bottom: 200px;
+    left: 5%;
     gap: 30px;
 
     @media (max-width: 500px) {
         left: 13%;
-        top: 780px;
+        top: 820px;
     }
 }
 
 .img_btn-text-center {
-    position: absolute;
-    bottom: 200px;
-    left: 38%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    position: absolute;
+    bottom: 200px;
+    left: 38%;
     gap: 30px;
 
     @media (max-width: 500px) {
         left: 13%;
-        bottom: 750px;
+        bottom: 820px;
     }
 }
 
 .img_btn-text-right {
-    position: absolute;
-    bottom: 200px;
-    left: 71%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    position: absolute;
+    bottom: 200px;
+    left: 71%;
     gap: 30px;
 
     @media (max-width: 500px) {
@@ -467,9 +464,9 @@ $colorGetStarted: #F9E5DA;
 
 .aboutme {
     background-color: $lightColor;
-    display: flex;
+    //display: flex;
     padding: 90px 0;
-    flex-direction: column;
+    //flex-direction: column;
 
     &_wrapper {
         display: flex;
@@ -569,12 +566,12 @@ $colorGetStarted: #F9E5DA;
 
     &_box-img-text {
         display: flex;
+        justify-content: start;
+        align-items: center;
         width: 50%;
         border: 1px solid $colorBordersCard;
         box-sizing: border-box;
         padding: 20px;
-        justify-content: start;
-        align-items: center;
 
         @media (max-width: 500px) {
             width: 90%;
