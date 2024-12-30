@@ -694,22 +694,15 @@ $colorGetStarted: #F9E5DA;
 .getstarted {
     background-color: $colorGetStarted;
     height: 410px;
-    // margin-bottom: 50px;
-    // display: flex;
-    // padding-top: 50px 0px;
 
     &_wrapper {
         display: flex;
-        // margin-top: 90px;
-        // border: 1px solid green;
         justify-content: space-between;
         margin-top: -40px; 
-        // margin-bottom: 50px;
     }
 
     &_star {
         position: relative;
-        // border: 1px solid red;
         width: 150px;
         height: 150px;
         left: 175px;
@@ -726,8 +719,6 @@ $colorGetStarted: #F9E5DA;
         display: flex;
         width: 220px;
         flex-direction: column;
-        // border: 2px solid red;
-        // margin-top: 90px;
     }
 
     &_title {
@@ -738,7 +729,6 @@ $colorGetStarted: #F9E5DA;
         font-size: 24px;
         font-weight: bold;
         color: $darkBraunColor;
-        // margin: 20px 0px;
     }
 
     &_btn {
@@ -750,19 +740,15 @@ $colorGetStarted: #F9E5DA;
         justify-content: right;
         margin-top: 50px;
         margin-left: 80px;
-        // margin-top: 90px;
         width: 430px;
-        // border: 1px solid lightgreen;
         
     }
 
     &_box-img {
         position: relative;
-        // border: 1px solid blue;
         width: 450px;
         height: 280px;
         margin-top: -60px;
-        // box-sizing: border-box;
         width: 35%;
         left: 45px;
     }
@@ -770,7 +756,6 @@ $colorGetStarted: #F9E5DA;
     &_mail-img {
         position: absolute;
         z-index: 10;
-        // border: 2px solid yellow;
         margin: 5px auto;
         width: 100%;
         height: 100%;
@@ -780,7 +765,6 @@ $colorGetStarted: #F9E5DA;
     &_path-img {
         position: absolute;
         z-index: 5;
-        // border: 2px solid red;
         left: 70px;
     }
 }
